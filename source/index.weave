@@ -10,6 +10,16 @@ standard_page(name: "Love Live! Events Site", path: "") do
 	end
 end
 
+standard_page(name: "404-girl idol group", path: "404") do
+
+	row do
+		col 12 do
+			h2 "actually doesn't exist (yet)"
+
+		end
+	end
+end
+
 Dir["data/perf/*"].each do |path|
 	link_name = path.sub("data/perf/","")
 	slug = link_name.downcase.gsub("µ's", "muse")
