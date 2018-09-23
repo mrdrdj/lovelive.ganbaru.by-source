@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 git config --global user.email "davidsiaw@gmail.com"
 git config --global user.name "David Siaw (via Circle CI)"
 
