@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.3-jessie
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints: "b1:d1:06:67:c9:83:8c:67:36:87:94:b1:29:e2:67:e4"
+      - run: bash deploy.bash

@@ -1,0 +1,473 @@
+---
+- - 2016/01/11
+  - :id: 0
+    :title: 1st Single Premier
+    :info: Kimi no Kokoro wa Kagayaiteru Kai?
+    :venue: Mielparque Hall
+- - 2016/07/31
+  - :id: 1
+    :title: Love Live! Sunshine!! Aqours Summer Holidays Extracurricular Activities
+      ~Summer Festival with Everyone~
+    :info: Aozora Jumping Heart
+    :venue: Numazu Civic Center
+- - 2016/10/21
+  - :id: 2
+    :title: NHK Special Guest
+    :info: Aozora Jumping Heart
+    :venue: Numazu Civic Center
+- - 2016/12/27
+  - :id: 3
+    :title: SHAN SHAN with Everybody (Xmas Mini Live)
+    :info: Jingle Bells ga Tomaranai & Aozora Jumping Heart
+    :venue: Toyusu PIT
+- - 2016/12/27
+  - :id: 4
+    :title: SHAN SHAN with Everybody (Xmas Mini Live)
+    :info: Jingle Bells ga Tomaranai & Aozora Jumping Heart
+    :venue: Toyusu PIT
+- - 2017/02/25
+  - :id: 5
+    :title: '1st Love Live ~Step 0 to 1~ '
+    :info: Various
+    :venue: Yokohama Arena
+- - 2017/02/26
+  - :id: 6
+    :title: '1st Love Live ~Step 0 to 1~ '
+    :info: Various
+    :venue: Yokohama Arena
+- - 2017/04/30
+  - :id: 7
+    :title: Milky Holmes & Bushiroad's 10th Anniversary Live
+    :info: Aozora Jumping Heart
+    :venue: Yokohama Arena
+- - 2017/05/13
+  - :id: 8
+    :title: Aniupa
+    :info: MIRAI TICKET
+    :venue: Yoyogi Gymnasium
+- - 2017/00/30
+  - :id: 9
+    :title: Anime Matsuri World Kawaii Live
+    :info: MIRAI TICKET
+    :venue: Micrisoft Theatre (US)
+- - 2017/07/22
+  - :id: 10
+    :title: BILIBILI MACRO LINK -STAR PHASE × Anisong World Matsuri
+    :info: Mijuku Dreamer? Aozora Jumping Heart?
+    :venue: Shanghai World Expo Exhibition and Convention Center (CN)
+- - 2017/07/29
+  - :id: 11
+    :title: "[Numazu Summer Festival 2017]"
+    :info: Kimonos
+    :venue: Kouryou Plaza
+- - 2017/07/29
+  - :id: 12
+    :title: "[Numazu Summer Festival 2017]"
+    :info: Kimonos
+    :venue: Kouryou Plaza
+- - 2017/07/30
+  - :id: 13
+    :title: "[Numazu Summer Festival 2017]"
+    :info: Kimonos
+    :venue: Kouryou Plaza
+- - 2017/07/30
+  - :id: 14
+    :title: "[Numazu Summer Festival 2017]"
+    :info: Kimonos
+    :venue: Kouryou Plaza
+- - 2017/08/05
+  - :id: 15
+    :title: Aqours 2nd Live ~Happy Party Train Tour~
+    :info: Various
+    :venue: Nippon Gaishi Hall
+- - 2017/08/06
+  - :id: 16
+    :title: Aqours 2nd Live ~Happy Party Train Tour~
+    :info: Various
+    :venue: Nippon Gaishi Hall
+- - 2017/08/19
+  - :id: 17
+    :title: Aqours 2nd Live ~Happy Party Train Tour~
+    :info: Various
+    :venue: World Memorial Hall
+- - 2017/08/20
+  - :id: 18
+    :title: Aqours 2nd Live ~Happy Party Train Tour~
+    :info: Various
+    :venue: World Memorial Hall
+- - 2017/08/25
+  - :id: 19
+    :title: Animelo Summer Live 2017 The Card
+    :info: Happy Party Train
+    :venue: Saitama Super Arena
+- - 2017/09/30
+  - :id: 20
+    :title: Aqours 2nd Live ~Happy Party Train Tour~
+    :info: Various
+    :venue: MetLife Dome
+- - 2017/10/01
+  - :id: 21
+    :title: Aqours 2nd Live ~Happy Party Train Tour~
+    :info: Various
+    :venue: MetLife Dome
+- - 2017/10/21
+  - :id: 22
+    :title: 'T-Spook: Tokyo Halloween Party'
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Qinghai P District Special Stage
+- - 2017/11/04
+  - :id: 23
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Orix Theater
+- - 2017/11/05
+  - :id: 24
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Orix Theater
+- - 2017/11/05
+  - :id: 25
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Orix Theater
+- - 2017/11/18
+  - :id: 26
+    :title: Aqours Club Activity LIVE & FAN MEETING Trip to Asia ~ Landing action
+      Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: KBS Arena
+- - 2017/11/18
+  - :id: 27
+    :title: Aqours Club Activity LIVE & FAN MEETING Trip to Asia ~ Landing action
+      Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: KBS Arena
+- - 2017/11/25
+  - :id: 28
+    :title: NHK World presents Songs of Tokyo
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: KBS Arena
+- - 2017/12/09
+  - :id: 29
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Jingle Bells ga Tomaranai
+    :venue: Nitori Cultural Hall
+- - 2017/12/10
+  - :id: 30
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Jingle Bells ga Tomaranai
+    :venue: Nitori Cultural Hall
+- - 2017/12/10
+  - :id: 31
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Jingle Bells ga Tomaranai
+    :venue: Nitori Cultural Hall
+- - 2017/12/13
+  - :id: 32
+    :title: 2017 FNS Song Festival
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Nitori Cultural Hall
+- - 2017/12/16
+  - :id: 33
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Jingle Bells ga Tomaranai
+    :venue: Numazu Civic Cultural Center
+- - 2017/12/16
+  - :id: 34
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Jingle Bells ga Tomaranai
+    :venue: Numazu Civic Cultural Center
+- - 2017/12/22
+  - :id: 35
+    :title: Buzz Rhythm 02
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Numazu Civic Cultural Center
+- - 2017/12/27
+  - :id: 36
+    :title: "フジテレビNEXT『坂崎幸之助のももいろフォーク村NEXT』セトリ"
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Fuji TV 02
+- - 2018/01/06
+  - :id: 37
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Mijuku DREAMER
+    :venue: Fukuoka Sun Palace Hotel & Hall
+- - 2018/01/06
+  - :id: 38
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Mijuku DREAMER
+    :venue: Fukuoka Sun Palace Hotel & Hall
+- - 2018/01/08
+  - :id: 39
+    :title: DENGEKI 25th Anniversary DENGEKI MUSIC LIVE !! 2018
+    :info: Kini no Kokoro wa Kagayaiteru Kai?
+    :venue: Makuhari Messe
+- - 2018/01/20
+  - :id: 40
+    :title: Aqours Club Activity LIVE & FAN MEETING Trip to Asia ~ Landing action
+      Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Jing'an Sports Center Natatorium (CN)
+- - 2018/01/20
+  - :id: 41
+    :title: Aqours Club Activity LIVE & FAN MEETING Trip to Asia ~ Landing action
+      Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Jing'an Sports Center Natatorium (CN)
+- - 2018/02/03
+  - :id: 42
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: MIRAI TICKET
+    :venue: Nagoya International Conference Center
+- - 2018/02/03
+  - :id: 43
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: MIRAI TICKET
+    :venue: Nagoya International Conference Center
+- - 2018/02/10
+  - :id: 44
+    :title: Aqours Club Activity LIVE & FAN MEETING Trip to Asia ~ Landing action
+      Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Taipei International Convention Center (TW)
+- - 2018/02/10
+  - :id: 45
+    :title: Aqours Club Activity LIVE & FAN MEETING Trip to Asia ~ Landing action
+      Yeah!! ~
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Taipei International Convention Center (TW)
+- - 2018/03/10
+  - :id: 46
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Kimi no Kokoro wa Kagayaiteru Kai?
+    :venue: Makuhari Messe
+- - 2018/03/11
+  - :id: 47
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Kimi no Kokoro wa Kagayaiteru Kai?
+    :venue: Makuhari Messe
+- - 2018/03/11
+  - :id: 48
+    :title: Aqours Club Activities Live & Fan Meeting ~ Landing Action Yeah!! ~
+    :info: Kimi no Kokoro wa Kagayaiteru Kai?
+    :venue: Makuhari Messe
+- - 2018/04/27
+  - :id: 49
+    :title: Saint Snow PRESENTS LOVELIVE! SUNSHINE!! HAKODATE UNIT CARNIVAL
+    :info: 1st Live Subunit Costumes
+    :venue: Hakodate Arena
+- - 2018/04/28
+  - :id: 50
+    :title: Saint Snow PRESENTS LOVELIVE! SUNSHINE!! HAKODATE UNIT CARNIVAL
+    :info: 2nd Live Subunit Costumes
+    :venue: Hakodate Arena
+- - 2018/06/09
+  - :id: 51
+    :title: 'Aqours 3rd LoveLive! Tour ～WONDERFUL STORIES ～ '
+    :info: Various
+    :venue: MetLife Dome
+- - 2018/06/10
+  - :id: 52
+    :title: 'Aqours 3rd LoveLive! Tour ～WONDERFUL STORIES ～ '
+    :info: Various
+    :venue: MetLife Dome
+- - 2018/06/16
+  - :id: 53
+    :title: 'Aqours 3rd LoveLive! Tour ～WONDERFUL STORIES ～ '
+    :info: Various
+    :venue: Osaka-jō Hall
+- - 2018/06/17
+  - :id: 54
+    :title: 'Aqours 3rd LoveLive! Tour ～WONDERFUL STORIES ～ '
+    :info: Various
+    :venue: Osaka-jō Hall
+- - 2018/06/28
+  - :id: 55
+    :title: CDTV'18 Mid-year Special Entertainment Summary
+    :info: WATER BLUE NEW WORLD
+    :venue: TBS
+- - 2018/07/04
+  - :id: 56
+    :title: LOVELIVE! SUNSHINE!! Aqours World Love Live! in LA ~Beyond the Pacific~
+    :info: Various
+    :venue: Microsoft Theatre (US)
+- - 2018/07/07
+  - :id: 57
+    :title: 'Aqours 3rd LoveLive! Tour ～WONDERFUL STORIES ～ '
+    :info: Various
+    :venue: Marine Messe Fukuoka
+- - 2018/07/08
+  - :id: 58
+    :title: 'Aqours 3rd LoveLive! Tour ～WONDERFUL STORIES ～ '
+    :info: Various
+    :venue: Marine Messe Fukuoka
+- - 2018/07/14
+  - :id: 59
+    :title: TBS音楽の日
+    :info: Aozora Jumping Heart
+    :venue: Marine Messe Fukuoka
+- - 2018/07/25
+  - :id: 60
+    :title: FNSうたの夏祭り (2018 Music Festival in Summer)
+    :info: Aozora Jumping Heart
+    :venue: Marine Messe Fukuoka
+- - 2018/07/27
+  - :id: 61
+    :title: Coca-Cola SUMMER STATION Music LIVE
+    :info: Aozora Jumping Heart
+    :venue: Coca-Cola SUMMER STATION Music LIVE (Roppongi Hills Arena)
+- - 2018/08/24
+  - :id: 62
+    :title: Animelo Summer Live 2018 OK! Anisama
+    :info: Mirai no Bokura wa Shitteru yo
+    :venue: Saitama Super Arena
+- - 2018/09/08
+  - :id: 63
+    :title: "シブヤノオト"
+    :info: Koi ni Naritai AQUARIUM
+    :venue: NHK
+- - 2018/09/09
+  - :id: 64
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: N/A
+    :venue: Nitori Culture Hall
+- - 2018/09/09
+  - :id: 65
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: N/A
+    :venue: Nitori Culture Hall
+- - 2018/09/22
+  - :id: 66
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Galaxy HidE and Seek
+    :venue: Forest Hall
+- - 2018/09/22
+  - :id: 67
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Galaxy HidE and Seek
+    :venue: Forest Hall
+- - 2018/09/23
+  - :id: 68
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Galaxy HidE and Seek
+    :venue: Forest Hall
+- - 2018/09/24
+  - :id: 69
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Galaxy HidE and Seek
+    :venue: Matsuyama City Center
+- - 2018/09/24
+  - :id: 70
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Galaxy HidE and Seek
+    :venue: Matsuyama City Center
+- - 2018/11/17
+  - :id: 71
+    :title: Aqours 4th LoveLive! ～Sailing to the Sunshine～
+    :info: Various
+    :venue: Tokyo Dome
+- - 2018/11/18
+  - :id: 72
+    :title: Aqours 4th LoveLive! ～Sailing to the Sunshine～
+    :info: Various
+    :venue: Tokyo Dome
+- - 2018/12/02
+  - :id: 73
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Fukuoka Sunpalace
+- - 2018/12/02
+  - :id: 74
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Fukuoka Sunpalace
+- - 2018/12/15
+  - :id: 75
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Sendai Sun Plaza
+- - 2018/12/15
+  - :id: 76
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Sendai Sun Plaza
+- - 2019/01/05
+  - :id: 77
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Makuhari Event Hall
+- - 2019/01/06
+  - :id: 78
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Makuhari Event Hall
+- - 2019/01/06
+  - :id: 79
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Makuhari Event Hall
+- - 2019/01/13
+  - :id: 80
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Hiroshima Bunka Gakuen HBG Hall
+- - 2019/01/13
+  - :id: 81
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Hiroshima Bunka Gakuen HBG Hall
+- - 2019/01/19
+  - :id: 82
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Honda no Mori Hall
+- - 2019/01/19
+  - :id: 83
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Honda no Mori Hall
+- - 2019/02/09
+  - :id: 84
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Numazu Civic Cultural Center
+- - 2019/02/10
+  - :id: 85
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Numazu Civic Cultural Center
+- - 2019/02/10
+  - :id: 86
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Numazu Civic Cultural Center
+- - 2019/02/16
+  - :id: 87
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Orix Theater
+- - 2019/02/17
+  - :id: 88
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Orix Theater
+- - 2019/02/17
+  - :id: 89
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Orix Theater
+- - 2019/03/02
+  - :id: 90
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Musashino Forest Sports Plaza (Main Arena)
+- - 2019/03/03
+  - :id: 91
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Musashino Forest Sports Plaza (Main Arena)
+- - 2019/03/03
+  - :id: 92
+    :title: Aqours Club Activities Live & Fan Meeting 2018 Unit Tour
+    :info: Various
+    :venue: Musashino Forest Sports Plaza (Main Arena)

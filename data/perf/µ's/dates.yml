@@ -1,0 +1,301 @@
+---
+- - 2011/05/29
+  - :id: 0
+    :title: Printemps Meet & Greet
+    :info: ''
+    :venue: AKIHABARA Gamers head office
+- - 2011/06/25
+  - :id: 1
+    :title: BiBi Meet & Greet
+    :info: ''
+    :venue: AKIHABARA Gamers head office
+- - 2011/07/31
+  - :id: 2
+    :title: lily white Meet & Greet
+    :info: ''
+    :venue: AKIHABARA Gamers head office
+- - 2012/02/19
+  - :id: 3
+    :title: Love Live! μ's First LoveLive!
+    :info: ''
+    :venue: Yokohama BLITZ
+- - 2012/03/02
+  - :id: 4
+    :title: For Smile - Korea-Japan Friendship Charity Concert 2012
+    :info: ''
+    :venue: Shinjuku Bunka Center Great Hall
+- - 2012/03/10
+  - :id: 5
+    :title: Bushiroad Card Game LIVE 2012
+    :info: ''
+    :venue: Aichi Prefectural Art Theater Great Hall
+- - 2012/05/19
+  - :id: 6
+    :title: Honoka and Rin Meet & Greet
+    :info: ''
+    :venue: AKIHABARA Gamers head office
+- - 2012/07/15
+  - :id: 7
+    :title: Kotori and Hanayo Meet & Greet
+    :info: ''
+    :venue: AKIHABARA Gamers head office
+- - 2012/08/26
+  - :id: 8
+    :title: Animelo Summer Live 2012 -INFINITY∞-
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2012/09/23
+  - :id: 9
+    :title: Animelo Summer Live 2012 -INFINITY∞-
+    :info: ''
+    :venue: Makuhari Messe Bushiroad booth
+- - 2012/10/21
+  - :id: 10
+    :title: ASCII MEDIA WORKS 20th Anniversary DENGEKI MUSIC LIVE!!
+    :info: ''
+    :venue: Makuhari Messe Event Hall
+- - 2013/01/03
+  - :id: 11
+    :title: "μ's New Year LoveLive! 2013"
+    :info: ''
+    :venue: TOKYO DOME CITY HALL
+- - 2013/03/24
+  - :id: 12
+    :title: Bushiroad Card Game LIVE 2013
+    :info: ''
+    :venue: Grand Cube Osaka Main Hall
+- - 2013/06/16
+  - :id: 13
+    :title: "μ's 3rd Anniversary LoveLive!"
+    :info: ''
+    :venue: Pacifico Yokohama
+- - 2013/08/23
+  - :id: 14
+    :title: Animelo Summer Live 2013 -FLAG NINE-
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2014/01/26
+  - :id: 15
+    :title: Lisani LIVE-4
+    :info: ''
+    :venue: Nippon Budokan
+- - 2014/02/08
+  - :id: 16
+    :title: Love Live! μ's →NEXT LoveLive!2014 ～ENDLESS PARADE～
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2014/02/09
+  - :id: 17
+    :title: Love Live! μ's →NEXT LoveLive!2014 ～ENDLESS PARADE～
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2014/05/24
+  - :id: 18
+    :title: Milky Holmes & Bushiroad 7th Anniversary Live in Yokohama Arena
+    :info: ''
+    :venue: Yokohama Arena
+- - 2014/07/19
+  - :id: 19
+    :title: Lantis Festival 2014
+    :info: ''
+    :venue: Nagashima Spa Land Lawn Plaza Special Stage
+- - 2014/07/20
+  - :id: 20
+    :title: Lantis Festival 2014
+    :info: ''
+    :venue: Nagashima Spa Land Lawn Plaza Special Stage
+- - 2014/08/31
+  - :id: 21
+    :title: Animelo Summer Live 2014 -ONENESS-
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2014/09/14
+  - :id: 22
+    :title: Lantis Festival 2014
+    :info: ''
+    :venue: Metropolitan Shiokaze Park Sun plaza
+- - 2015/01/31
+  - :id: 23
+    :title: "μ's GO→GO LoveLive! 2015 ～Dream Sensation!～"
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2015/02/01
+  - :id: 24
+    :title: "μ's GO→GO LoveLive! 2015 ～Dream Sensation!～"
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2015/05/30
+  - :id: 25
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Nakano Sun Plaza
+- - 2015/05/30
+  - :id: 26
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Nakano Sun Plaza
+- - 2015/05/31
+  - :id: 27
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Nakano Sun Plaza
+- - 2015/05/31
+  - :id: 28
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Nakano Sun Plaza
+- - 2015/06/07
+  - :id: 29
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Pacifico Yokohama National Convention Hall
+- - 2015/06/07
+  - :id: 30
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Pacifico Yokohama National Convention Hall
+- - 2015/06/13
+  - :id: 31
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Makuhari Messe Event Hall
+- - 2015/06/14
+  - :id: 32
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Makuhari Messe Event Hall
+- - 2015/06/14
+  - :id: 33
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Makuhari Messe Event Hall
+- - 2015/06/20
+  - :id: 34
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Fukuoka City Hall
+- - 2015/06/20
+  - :id: 35
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Fukuoka City Hall
+- - 2015/06/27
+  - :id: 36
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: 'Hokuto Cultural Hall '
+- - 2015/06/27
+  - :id: 37
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: 'Hokuto Cultural Hall '
+- - 2015/07/04
+  - :id: 38
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Grand Cube Osaka Main Hall
+- - 2015/07/04
+  - :id: 39
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Grand Cube Osaka Main Hall
+- - 2015/07/05
+  - :id: 40
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Grand Cube Osaka Main Hall
+- - 2015/07/05
+  - :id: 41
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Grand Cube Osaka Main Hall
+- - 2015/07/12
+  - :id: 42
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Hiroshima Cultural Gallery HBG Hall
+- - 2015/07/12
+  - :id: 43
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Hiroshima Cultural Gallery HBG Hall
+- - 2015/07/19
+  - :id: 44
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Nagoya International Conference Center Century Hall
+- - 2015/07/19
+  - :id: 45
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Nagoya International Conference Center Century Hall
+- - 2015/08/01
+  - :id: 46
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Sapporo Museum of Art and Culture Nitori Cultural Hall
+- - 2015/08/01
+  - :id: 47
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: Sapporo Museum of Art and Culture Nitori Cultural Hall
+- - 2015/08/09
+  - :id: 48
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: 'Sendai Sun Plaza Hall '
+- - 2015/08/09
+  - :id: 49
+    :title: "μ's Fan Meeting Tour 2015 ～LoveLive! in Your City!～"
+    :info: ''
+    :venue: 'Sendai Sun Plaza Hall '
+- - 2015/08/28
+  - :id: 50
+    :title: Animelo Summer Live 2015 - THE GATE -
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2015/09/11
+  - :id: 51
+    :title: MUSIC JAPAN SPECIAL
+    :info: ''
+    :venue: Saitama Super Arena
+- - 2015/10/23
+  - :id: 52
+    :title: Love Live! µ’s Special Live
+    :info: KiRa-KiRa Sensation!
+    :venue: NHK Broadcasting Center CT-101 studio
+- - 2015/12/04
+  - :id: 53
+    :title: MUSIC STATION (TV Program)
+    :info: KiRa-KiRa Sensation!
+    :venue: NHK Broadcasting Center CT-101 studio
+- - 2015/12/31
+  - :id: 54
+    :title: The 66th NHK Kohaku Utagoe Battle "Thats Japan!, That's Kohaku!"
+    :info: KiRa-KiRa Sensation!
+    :venue: NHK Hall
+- - 2016/01/30
+  - :id: 55
+    :title: "μ's Fan Meeting in Shanghai ～Talk & Live～"
+    :info: KiRa-KiRa Sensation!
+    :venue: Shanghai Mercedes-Benz Arena
+- - 2016/03/19
+  - :id: 56
+    :title: "μ's Fan Meeting Tour in Taipei"
+    :info: KiRa-KiRa Sensation!
+    :venue: Taipei World Trade Center Nangang Exhibition Hall
+- - 2016/03/19
+  - :id: 57
+    :title: "μ's Fan Meeting Tour in Taipei"
+    :info: KiRa-KiRa Sensation!
+    :venue: Taipei World Trade Center Nangang Exhibition Hall
+- - 2016/03/31
+  - :id: 58
+    :title: Love Live! µ's Final Love Live! ～μ'sic Forever♪♪♪♪♪♪♪♪♪～
+    :info: KiRa-KiRa Sensation!
+    :venue: Tokyo Dome
+- - 2016/04/01
+  - :id: 59
+    :title: Love Live! µ's Final Love Live! ～μ'sic Forever♪♪♪♪♪♪♪♪♪～
+    :info: KiRa-KiRa Sensation!
+    :venue: Tokyo Dome
