@@ -1,0 +1,191 @@
+include "main.rb"
+
+standard_page(name: "Love Live! Events Site", path: "") do
+
+	row do
+		col 12 do
+			h2 "Welcome to the Love Live! Events Information Site"
+
+		end
+	end
+end
+
+Dir["data/perf/*"].each do |path|
+	link_name = path.sub("data/perf/","")
+	slug = link_name.downcase.gsub("µ's", "muse")
+
+	songs = YAML.load(File.read("#{path}/songs.yml"))
+	perf = YAML.load(File.read("#{path}/perf.yml"))
+	dates = YAML.load(File.read("#{path}/dates.yml"))
+
+	songid_to_perf = {}
+	dateid_to_perf = {}
+
+	perf.each do |info|
+		songid_to_perf[info[:song_id]] = [] if !songid_to_perf.has_key?(info[:song_id])
+		dateid_to_perf[info[:date_id]] = [] if !dateid_to_perf.has_key?(info[:date_id])
+
+		songid_to_perf[info[:song_id]] << info
+		dateid_to_perf[info[:date_id]] << info
+	end
+
+	eventnames = {}
+
+	dates.each do |k,v|
+		key = "#{k} #{v[:venue]}"
+		eventnames[key] = (eventnames[key] || {})
+		eventnames[key][v[:id]] = eventnames[key].length + 1
+	end
+
+	songhash = {}
+	songs.each do |k,v|
+		songhash[k] = v.merge({title: k, perfs: (songid_to_perf[v[:id]] || []).length })
+	end
+
+	titlehash = {}
+	dateid_to_xtitle = {}
+
+	dates.each do |k,v|
+		titlehash[v[:title]] = [] if !titlehash.has_key?(v[:title])
+
+		key = "#{k} #{v[:venue]}"
+		xtitle = v[:venue]
+		if eventnames[key].keys.length > 1
+			xtitle = "#{v[:venue]} (Session #{eventnames[key][v[:id]]})"
+		end
+		dateid_to_xtitle[v[:id]] = xtitle
+
+		standard_page(name: "#{v[:title]}", path: "#{slug}/events/#{v[:id]}") do
+			row do
+				col 12 do
+					h2 {
+						span xtitle
+						span k, class: "pull-right"
+					}
+					ibox do
+						if dateid_to_perf[v[:id]].nil?
+							h3 "Not performed yet"
+						else
+							table do
+								thead do
+									th { text "Order" }
+									th { text "Title" }
+									th { text "Released" }
+								end
+								dateid_to_perf[v[:id]].sort_by{|x| x[:order].rjust(4, "0") }.each do |x|
+									tr do
+										td { text x[:order] }
+										td {
+											short = ""
+											short = "(short ver.)" if x[:type] == :short
+
+											a "#{songs[x[:song_id]][0]} #{short}", href: "/#{slug}/songs/#{x[:song_id]}"
+										}
+										td { text songs[x[:song_id]][1][:released] }
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+
+		titlehash[v[:title]] << v.merge({date: k, xtitle: xtitle})
+	end
+
+	songs.each do |k,v|
+		standard_page(name: "#{k} - #{link_name}", path: "#{slug}/songs/#{v[:id]}") do
+
+			row do
+				col 12 do
+					ibox do
+						if songid_to_perf[v[:id]].nil?
+							h3 "Not performed yet"
+						else	
+							table do
+								thead do
+									th { text "Performance No." }
+									th { text "Date Performed" }
+									th { text "Event" }
+									th { text "Venue" }
+								end
+								songid_to_perf[v[:id]].each_with_index do |x,i|
+									dateinfo = dates[x[:date_id]]
+									key = "#{dateinfo[0]} #{dateinfo[1][:venue]}"
+									tr do
+										td { text (i+1).to_s }
+										td { a "#{dateinfo[0]}", href: "/#{slug}/events/#{x[:date_id]}" }
+										td { a "#{dateinfo[1][:title]}", href: "/#{slug}/events/#{x[:date_id]}" }
+										td { a "#{dateid_to_xtitle[x[:date_id]]}", href: "/#{slug}/events/#{x[:date_id]}" }
+									end
+								end
+							end
+						end
+
+					end
+				end
+			end
+
+		end
+	end
+
+	standard_page(name: "#{link_name} Songs", path: "#{slug}/songs") do
+
+		row do
+			col 12 do
+				ibox do
+					table system: :foo_table, hover: true, max_items_per_page: 40 do
+						thead do
+							th { text "Title" }
+							th { text "Released" }
+							th { text "Times performed" }
+						end
+						songhash.each do |title, info|
+							tr do
+								td { a info[:title], href: "/#{slug}/songs/#{info[:id]}" }
+								td { text info[:released] }
+								td { text info[:perfs].to_s }
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	standard_page(name: "#{link_name} Events", path: "#{slug}/events") do
+
+		row do
+			col 12 do
+				ibox do
+
+					table system: :foo_table, hover: true, max_items_per_page: 20 do
+						thead do
+							th { text "Event Name" }
+							th :"data-hide" => :all do
+								text "Dates"
+							end
+						end
+						titlehash.each do |title, info|
+							tr do
+								td { text title }
+								td do
+									ul do
+										info.map do |dateinfo|
+											li do
+
+												a "#{dateinfo[:date]} - #{dateinfo[:xtitle]}", href: "/#{slug}/events/#{dateinfo[:id]}"
+												
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
