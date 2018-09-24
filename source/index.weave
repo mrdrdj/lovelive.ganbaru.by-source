@@ -76,19 +76,22 @@ Dir["data/perf/*"].each do |path|
 						if dateid_to_perf[v[:id]].nil?
 							h3 "Not performed yet"
 						else
-							table do
+							table system: :foo_table, hover: true, max_items_per_page: 30 do
 								thead do
-									th { text "Order" }
+									th :"data-sort-value" => "number" do
+										text "Order"
+									end
 									th { text "Title" }
 									th { text "Released" }
 								end
 								dateid_to_perf[v[:id]].sort_by{|x| x[:order].rjust(4, "0") }.each do |x|
 									tr do
-										td { text x[:order] }
+										td { text x[:order].to_s.rjust(4, " ") }
 										td {
 											short = ""
 											short = "(short ver.)" if x[:type] == :short
 
+											sname is: "#{songs[x[:song_id]][0]} #{short}"
 											a "#{songs[x[:song_id]][0]} #{short}", href: "/#{slug}/songs/#{x[:song_id]}"
 										}
 										td { text songs[x[:song_id]][1][:released] }
@@ -113,9 +116,11 @@ Dir["data/perf/*"].each do |path|
 						if songid_to_perf[v[:id]].nil?
 							h3 "Not performed yet"
 						else	
-							table do
+							table system: :foo_table, hover: true, max_items_per_page: 30 do
 								thead do
-									th { text "Performance No." }
+									th :"data-sort-value" => "number" do
+										text "Performance No."
+									end
 									th { text "Date Performed" }
 									th { text "Event" }
 									th { text "Venue" }
@@ -124,10 +129,10 @@ Dir["data/perf/*"].each do |path|
 									dateinfo = dates[x[:date_id]]
 									key = "#{dateinfo[0]} #{dateinfo[1][:venue]}"
 									tr do
-										td { text (i+1).to_s }
-										td { a "#{dateinfo[0]}", href: "/#{slug}/events/#{x[:date_id]}" }
-										td { a "#{dateinfo[1][:title]}", href: "/#{slug}/events/#{x[:date_id]}" }
-										td { a "#{dateid_to_xtitle[x[:date_id]]}", href: "/#{slug}/events/#{x[:date_id]}" }
+										td { text (i+1).to_s.rjust(4, " ") }
+										td { sname is:"#{dateinfo[0]}";a "#{dateinfo[0]}", href: "/#{slug}/events/#{x[:date_id]}" }
+										td { sname is:"#{dateinfo[1][:title]}";a "#{dateinfo[1][:title]}", href: "/#{slug}/events/#{x[:date_id]}" }
+										td { sname is:"#{dateid_to_xtitle[x[:date_id]]}";a "#{dateid_to_xtitle[x[:date_id]]}", href: "/#{slug}/events/#{x[:date_id]}" }
 									end
 								end
 							end
@@ -144,18 +149,25 @@ Dir["data/perf/*"].each do |path|
 
 		row do
 			col 12 do
+
 				ibox do
-					table system: :foo_table, hover: true, max_items_per_page: 40 do
+					table system: :foo_table, hover: true, max_items_per_page: 30 do
 						thead do
+							th do
+								text "No."
+							end
 							th { text "Title" }
 							th { text "Released" }
-							th { text "Times performed" }
+							th do
+								text "Times performed" 
+							end
 						end
 						songhash.each do |title, info|
 							tr do
-								td { a info[:title], href: "/#{slug}/songs/#{info[:id]}" }
+								td { text "#{info[:id] + 1}".to_s.rjust(4, " ") }
+								td { sname is:"#{info[:title]}";a info[:title], href: "/#{slug}/songs/#{info[:id]}" }
 								td { text info[:released] }
-								td { text info[:perfs].to_s }
+								td { span info[:perfs].to_s.rjust(4, " ") }
 							end
 						end
 					end
@@ -172,24 +184,17 @@ Dir["data/perf/*"].each do |path|
 
 					table system: :foo_table, hover: true, max_items_per_page: 20 do
 						thead do
+							th { text "Date" }
 							th { text "Event Name" }
-							th :"data-hide" => :all do
-								text "Dates"
-							end
+							th { text "Venue" }
 						end
 						titlehash.each do |title, info|
-							tr do
-								td { text title }
-								td do
-									ul do
-										info.map do |dateinfo|
-											li do
 
-												a "#{dateinfo[:date]} - #{dateinfo[:xtitle]}", href: "/#{slug}/events/#{dateinfo[:id]}"
-												
-											end
-										end
-									end
+							info.map do |dateinfo|
+								tr do
+									td { a "#{dateinfo[:date]}", href: "/#{slug}/events/#{dateinfo[:id]}" }
+									td { sname is:"#{title}";a title, href: "/#{slug}/events/#{dateinfo[:id]}" }
+									td { sname is:"#{dateinfo[:xtitle]}";a dateinfo[:xtitle], href: "/#{slug}/events/#{dateinfo[:id]}" }
 								end
 							end
 						end

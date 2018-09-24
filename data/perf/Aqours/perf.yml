@@ -419,6 +419,10 @@
   :date_id: 66
   :order: '4'
   :type: :full
+- :song_id: 5
+  :date_id: 69
+  :order: '4'
+  :type: :full
 - :song_id: 6
   :date_id: 5
   :order: '7'
@@ -438,6 +442,10 @@
 - :song_id: 6
   :date_id: 56
   :order: '5'
+  :type: :full
+- :song_id: 6
+  :date_id: 69
+  :order: '1'
   :type: :full
 - :song_id: 7
   :date_id: 5
@@ -477,6 +485,10 @@
   :type: :full
 - :song_id: 8
   :date_id: 67
+  :order: '5'
+  :type: :full
+- :song_id: 8
+  :date_id: 68
   :order: '5'
   :type: :full
 - :song_id: 9
@@ -807,14 +819,6 @@
   :date_id: 50
   :order: '13'
   :type: :full
-- :song_id: 16
-  :date_id: 66
-  :order: '6'
-  :type: :full
-- :song_id: 16
-  :date_id: 67
-  :order: '6'
-  :type: :full
 - :song_id: 17
   :date_id: 11
   :order: '1'
@@ -978,6 +982,10 @@
 - :song_id: 21
   :date_id: 58
   :order: '12'
+  :type: :full
+- :song_id: 21
+  :date_id: 68
+  :order: '4'
   :type: :full
 - :song_id: 22
   :date_id: 5
@@ -1323,6 +1331,10 @@
   :date_id: 49
   :order: '7'
   :type: :full
+- :song_id: 32
+  :date_id: 69
+  :order: '5'
+  :type: :full
 - :song_id: 33
   :date_id: 16
   :order: '12'
@@ -1587,6 +1599,10 @@
   :date_id: 56
   :order: '6'
   :type: :full
+- :song_id: 39
+  :date_id: 69
+  :order: '3'
+  :type: :full
 - :song_id: 40
   :date_id: 15
   :order: '12'
@@ -1609,6 +1625,10 @@
   :type: :full
 - :song_id: 40
   :date_id: 67
+  :order: '2'
+  :type: :full
+- :song_id: 40
+  :date_id: 68
   :order: '2'
   :type: :full
 - :song_id: 41
@@ -1637,6 +1657,10 @@
   :type: :full
 - :song_id: 41
   :date_id: 67
+  :order: '3'
+  :type: :full
+- :song_id: 41
+  :date_id: 68
   :order: '3'
   :type: :full
 - :song_id: 42
@@ -2115,6 +2139,22 @@
   :date_id: 62
   :order: '4'
   :type: :short
+- :song_id: 51
+  :date_id: 66
+  :order: '6'
+  :type: :full
+- :song_id: 51
+  :date_id: 67
+  :order: '6'
+  :type: :full
+- :song_id: 51
+  :date_id: 68
+  :order: '6'
+  :type: :full
+- :song_id: 51
+  :date_id: 69
+  :order: '6'
+  :type: :full
 - :song_id: 52
   :date_id: 51
   :order: '3'
@@ -2429,5 +2469,21 @@
   :type: :short
 - :song_id: 73
   :date_id: 67
+  :order: E1
+  :type: :full
+- :song_id: 73
+  :date_id: 68
+  :order: '1'
+  :type: :short
+- :song_id: 73
+  :date_id: 68
+  :order: E1
+  :type: :full
+- :song_id: 73
+  :date_id: 69
+  :order: '1'
+  :type: :short
+- :song_id: 73
+  :date_id: 69
   :order: E1
   :type: :full

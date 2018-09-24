@@ -10,7 +10,7 @@ def standard_page(name:, path:, &block)
 			Dir["data/perf/*"].each do |path|
 				link_name = path.sub("data/perf/","")
 				slug = link_name.downcase.gsub("µ's", "muse")
-				nav "#{link_name}", :file, "/#{slug}" do
+				nav "#{link_name}", :music, "/#{slug}" do
 
 					nav "Songs", :music, "/#{slug}/songs"
 					nav "Events", :microphone, "/#{slug}/events"
