@@ -6,6 +6,29 @@ standard_page(name: "Love Live! Events Site", path: "") do
 		col 12 do
 			h2 "Welcome to the Love Live! Events Information Site"
 
+			blog_files = Dir['blog/*.md'].sort.reverse
+
+			blog_files.each do |md_file|
+
+				meta = YAML.load_file(md_file)
+
+				ibox do
+					title do 
+						text "</h5>"
+						link "/news/#{post_name_to_url_path(md_file)}/" do
+							h3 do
+								text meta["title"]
+								span meta["date"], :class => "pull-right", style: "font-size: 0.7em; font-weight: normal"
+							end
+						end
+						text "<h5>"
+					end
+
+					render md_file
+				end
+
+			end
+			
 		end
 	end
 end
