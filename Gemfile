@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'google-api-client', '0.8'
+gem 'google-api-client', '~> 0.24'
 gem 'weaver', '~> 0.7.0'
