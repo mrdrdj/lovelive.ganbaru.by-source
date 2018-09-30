@@ -55,7 +55,7 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    weaver (0.6.10)
+    weaver (0.7.0)
       activesupport
       optimist
       sinatra (~> 2.0.3)
@@ -65,7 +65,7 @@ PLATFORMS
 
 DEPENDENCIES
   google-api-client (= 0.8)
-  weaver (~> 0.6.10)
+  weaver (~> 0.7.0)
 
 BUNDLED WITH
    1.14.6

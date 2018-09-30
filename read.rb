@@ -192,14 +192,14 @@ def get_sheet_data(service, spreadsheet_id, sheet_name)
 				type: type
 			}
 
-			p color if types[color] == nil
+			#p color if types[color] == nil
 		end
 
 
 		xd[cellcontent] = true
 	end
 
-	p xd.keys
+	#p xd.keys
 
 	#File.write("data/", rdata.to_yaml)
 	FileUtils.mkdir_p "data/perf/#{sheet_name}"

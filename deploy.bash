@@ -6,6 +6,7 @@ git config --global user.name "David Siaw (via Circle CI)"
 git clone git@github.com:davidsiaw/lovelive.ganbaru.by.git build
 cp -r build/.git ./gittemp
 bundle install
+ruby prepfiles.rb
 bundle exec weaver build -r https://lovelive.ganbaru.by
 cp -r ./gittemp build/.git
 pushd build
