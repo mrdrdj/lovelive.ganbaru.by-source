@@ -7,6 +7,7 @@ git clone git@github.com:davidsiaw/lovelive.ganbaru.by.git build
 cp -r build/.git ./gittemp
 bundle install
 ruby prepfiles.rb
+ruby read.rb
 bundle exec weaver build -r https://lovelive.ganbaru.by
 cp -r ./gittemp build/.git
 pushd build
