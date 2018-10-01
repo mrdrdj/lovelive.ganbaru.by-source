@@ -13,6 +13,7 @@ cp -r ./gittemp build/.git
 pushd build
 echo lovelive.ganbaru.by > CNAME
 cp 404/index.html 404.html
+cp -r ../css/fonts css
 git add .
 git add -u
 git commit -m "update `date`"
