@@ -28,7 +28,7 @@ standard_page(name: "Love Live! Events Site", path: "") do
 				end
 
 			end
-			
+
 		end
 	end
 end
