@@ -274,7 +274,7 @@ Dir["data/perf/*"].each do |path|
 
 							info.map do |dateinfo|
 								tr onclick: "mixpanel.track('clicked_row', {type: 'event', title: '#{title}'});" do
-									td { a "#{dateinfo[:date]}", href: "/#{slug}/events/#{dateinfo[:id]}" }
+									td { sname is:"#{dateinfo[:date]}"; a "#{dateinfo[:date]}", href: "/#{slug}/events/#{dateinfo[:id]}" }
 									td { sname is:"#{title}";a title, href: "/#{slug}/events/#{dateinfo[:id]}" }
 									td { sname is:"#{dateinfo[:xtitle]}";a dateinfo[:xtitle], href: "/#{slug}/events/#{dateinfo[:id]}" }
 								end
