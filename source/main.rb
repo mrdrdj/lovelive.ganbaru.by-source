@@ -1,5 +1,6 @@
 require "yaml"
 require "redcarpet"
+require "./source/util.rb"
 
 def colors
 	{
@@ -23,6 +24,12 @@ def colors
 		hanamaru: "EEC900",
 		yohane:   "8F8F8F",
 	}
+end
+
+def get_loc_info(loc)
+	@locinfo = YAML.load_file("extradata/geocoder_cache.yml") if !@locinfo
+
+	@locinfo[loc]
 end
 
 def color_of(sym)

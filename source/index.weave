@@ -1,5 +1,8 @@
 include "main.rb"
 
+set_global :mixpanel_token, ENV['MIXPANEL_TOKEN']
+set_global :google_tracking_code, ENV['GOOGLE_TRACKING_CODE']
+
 standard_page(name: "Love Live! Events Site", path: "") do
 
 	row do
@@ -83,6 +86,8 @@ Dir["data/perf/*"].each do |path|
 
 		key = "#{k} #{v[:venue]}"
 		xtitle = v[:venue]
+		loc_key = keyize(v[:venue])
+		loc_info = get_loc_info(loc_key)
 		if eventnames[key].keys.length > 1
 			xtitle = "#{v[:venue]} (Session #{eventnames[key][v[:id]]})"
 		end
@@ -97,7 +102,11 @@ Dir["data/perf/*"].each do |path|
 					}
 					ibox do
 						if dateid_to_perf[v[:id]].nil?
-							h3 "Not performed yet"
+							if v[:not_performed_because]
+								h3 "#{v[:not_performed_because]}"
+							else
+								h3 "Not performed yet"
+							end
 						else
 							table system: :foo_table, hover: true, max_items_per_page: 30 do
 								thead do
@@ -134,25 +143,19 @@ Dir["data/perf/*"].each do |path|
 							src:""
 
 						on_page_load <<-SCRIPT
-							$.get("https://nominatim.openstreetmap.org/search/#{xtitle}?format=json&addressdetails=1&limit=1&polygon_svg=1", function( data ) {
-
-								var entry = data[0];
-								var url = 'https://www.openstreetmap.org/export/embed.html?bbox='+
-									entry.boundingbox[2]+
-									'%2C'+
-									entry.boundingbox[0]+
-									'%2C'+
-									entry.boundingbox[3]+
-									'%2C'+
-									entry.boundingbox[1]+
-									'&layer=mapnik&marker='+
-									entry.lat+
-									'%2C'+
-									entry.lon;
-								$('#themap').attr('src', url)
-								
-								console.log(url)
-							});
+							var url = 'https://www.openstreetmap.org/export/embed.html?bbox='+
+								#{loc_info[:bb][1]}+
+								'%2C'+
+								#{loc_info[:bb][0]}+
+								'%2C'+
+								#{loc_info[:bb][3]}+
+								'%2C'+
+								#{loc_info[:bb][2]}+
+								'&layer=mapnik&marker='+
+								#{loc_info[:lat]}+
+								'%2C'+
+								#{loc_info[:lon]};
+							$('#themap').attr('src', url)
 						SCRIPT
 					end
 

@@ -4,13 +4,28 @@ require 'googleauth/stores/file_token_store'
 require 'fileutils'
 require 'json'
 require 'yaml'
-
+require 'geocoder'
+require 'pry'
 
 OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
 APPLICATION_NAME = 'Numazu meibutsu GANBARUBY'.freeze
 CREDENTIALS_PATH = 'credentials.json'.freeze
 TOKEN_PATH = 'token.yaml'.freeze
 SCOPE = Google::Apis::SheetsV4::AUTH_SPREADSHEETS_READONLY
+
+class DataCollector
+	def initialize
+		@venues = {}
+	end
+
+	def add_venue(name)
+		@venues[name] = true
+	end
+
+	def venues
+		@venues
+	end
+end
 
 ##
 # Ensure valid credentials, either by restoring from the saved credentials
@@ -78,7 +93,18 @@ def humanstr_to_datestring(datestr)
 	month_hash = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].
 		each_with_index.
 		map{|x,i|[x, i+1]}.to_h
+	month_hash["January"] = 1
+	month_hash["February"] = 2
+	month_hash["March"] = 3
+	month_hash["April"] = 4
+	month_hash["May"] = 5
+	month_hash["June"] = 6
 	month_hash["July"] = 7
+	month_hash["August"] = 8
+	month_hash["September"] = 9
+	month_hash["October"] = 10
+	month_hash["November"] = 11
+	month_hash["December"] = 12
 
 	date_regex = /(?<year>[0-9]{4}) (?<month>[A-Z][a-z]+) (?<day>[0-9]+)/i
 	m = date_regex.match(datestr)
@@ -87,7 +113,7 @@ def humanstr_to_datestring(datestr)
 	"#{m[:year]}/#{month}/#{day}"
 end
 
-def get_sheet_data(service, spreadsheet_id, sheet_name)
+def get_sheet_data(service, spreadsheet_id, sheet_name, dc)
 
 	types = {}
 	typecolors = service.get_spreadsheet(spreadsheet_id, include_grid_data: true, ranges: "'#{sheet_name}'!B1:3")
@@ -130,6 +156,7 @@ def get_sheet_data(service, spreadsheet_id, sheet_name)
 		cur_info = rinfos[i] if rinfos[i] && rinfos[i].length != 0
 		cur_venue = rvenues[i] if rvenues[i] && rvenues[i].length != 0
 		datestr = "#{cur_year} #{x}"
+		dc.add_venue(cur_venue)
 		dates << [humanstr_to_datestring(datestr), {
 				id:    i,
 				title: cur_title,
@@ -163,7 +190,17 @@ def get_sheet_data(service, spreadsheet_id, sheet_name)
 	cmax = idx_to_column(dates.length+3)
 	rmax = idx_to_row(songs.length+6)
 	colordata = service.get_spreadsheet(spreadsheet_id, include_grid_data: true, ranges: "'#{sheet_name}'!D7:#{cmax}#{rmax}")
+	datecolordata = service.get_spreadsheet(spreadsheet_id, include_grid_data: true, ranges: "'#{sheet_name}'!D3:#{cmax}3")
 
+	dates.each_with_index do |date, idx|
+		cellinfo = datecolordata.sheets[0].data[0].row_data[0].values[idx]
+		if cellinfo != nil
+			color = conv_color(cellinfo.effective_format.background_color)
+			if color == "999999ff"
+				date[1][:not_performed_because] = cellinfo.note
+			end
+		end
+	end
 
 	perf = []
 	xd = {}
@@ -215,6 +252,11 @@ service = Google::Apis::SheetsV4::SheetsService.new
 service.client_options.application_name = APPLICATION_NAME
 service.authorization = authorize
 
+dc = DataCollector.new
+
+#Geocoder.configure(lookup: :google, api_key: )
+#p Geocoder.search("Akihabara station")
+
 spreadsheet_id = '1JI_AiobPkbYJ1J2-PLN6tq3w3Hre6lMTdYps_owxCss'
 spreadsheet = service.get_spreadsheet(spreadsheet_id)
 
@@ -224,7 +266,12 @@ groups = spreadsheet.sheets.each_with_index.map {|x,i|
 	[x.properties.title, result.values[0][0]]
 }.select{|key,first_cell| first_cell == "Full Version"}.map{|k,v|k}
 
-groups.each { |group| get_sheet_data(service, spreadsheet_id, group) }
+groups.each { |group| get_sheet_data(service, spreadsheet_id, group, dc) }
+
+FileUtils.mkdir_p "extradata"
+File.write("extradata/locs.yml", dc.venues.to_yaml)
+
+exec("ruby geocode.rb")
 
 #.values.map{|x| p x.length} }
  
