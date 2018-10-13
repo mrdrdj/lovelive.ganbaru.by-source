@@ -73,7 +73,7 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uber (0.1.0)
-    weaver (0.7.0)
+    weaver (0.7.2)
       activesupport
       optimist
       sinatra (~> 2.0.3)
@@ -86,7 +86,7 @@ DEPENDENCIES
   google-api-client (~> 0.24)
   pry
   redcarpet
-  weaver (~> 0.7.0)
+  weaver (~> 0.7.2)
 
 BUNDLED WITH
    1.14.6
