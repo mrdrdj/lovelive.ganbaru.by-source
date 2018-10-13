@@ -110,14 +110,19 @@ Dir["data/perf/*"].each do |path|
 						else
 							table system: :foo_table, hover: true, max_items_per_page: 30 do
 								thead do
-									th :"data-sort-value" => "number" do
+									th :"data-sort-value" => "number",
+									   onclick: "mixpanel.track('clicked_sort', {type: 'event_song', column: 'order'});" do
 										text "Order"
 									end
-									th { text "Title" }
-									th { text "Released" }
+									th onclick: "mixpanel.track('clicked_sort', {type: 'event_song', column: 'title'});" do
+										text "Title" 
+									end
+									th onclick: "mixpanel.track('clicked_sort', {type: 'event_song', column: 'released'});" do
+										text "Released" 
+									end
 								end
 								dateid_to_perf[v[:id]].sort_by{|x| x[:order].rjust(4, "0") }.each do |x|
-									tr do
+									tr onclick: "mixpanel.track('clicked_row', {type: 'event_song', title: '#{songs[x[:song_id]][0]}'});" do
 										td { text x[:order].to_s.rjust(4, " ") }
 										td {
 											short = ""
@@ -177,17 +182,24 @@ Dir["data/perf/*"].each do |path|
 						else	
 							table system: :foo_table, hover: true, max_items_per_page: 30 do
 								thead do
-									th :"data-sort-value" => "number" do
+									th :"data-sort-value" => "number",
+									   onclick: "mixpanel.track('clicked_sort', {type: 'song_event', column: 'number'});" do
 										text "Performance No."
 									end
-									th { text "Date Performed" }
-									th { text "Event" }
-									th { text "Venue" }
+									th onclick: "mixpanel.track('clicked_sort', {type: 'song_event', column: 'date_performed'});" do
+									    text "Date Performed"
+									end
+									th onclick: "mixpanel.track('clicked_sort', {type: 'song_event', column: 'event'});" do
+										text "Event"
+									end
+									th onclick: "mixpanel.track('clicked_sort', {type: 'song_event', column: 'venue'});" do
+										text "Venue"
+									end
 								end
 								songid_to_perf[v[:id]].each_with_index do |x,i|
 									dateinfo = dates[x[:date_id]]
 									key = "#{dateinfo[0]} #{dateinfo[1][:venue]}"
-									tr do
+									tr onclick: "mixpanel.track('clicked_row', {type: 'song_event', title: '#{dateinfo[1][:title]}'});" do
 										td { text (i+1).to_s.rjust(4, " ") }
 										td { sname is:"#{dateinfo[0]}";a "#{dateinfo[0]}", href: "/#{slug}/events/#{x[:date_id]}" }
 										td { sname is:"#{dateinfo[1][:title]}";a "#{dateinfo[1][:title]}", href: "/#{slug}/events/#{x[:date_id]}" }
@@ -212,17 +224,22 @@ Dir["data/perf/*"].each do |path|
 				ibox do
 					table system: :foo_table, hover: true, max_items_per_page: 30 do
 						thead do
-							th do
+							th :"data-sort-value" => "number",
+							   onclick: "mixpanel.track('clicked_sort', {type: 'song', column: 'number'});" do
 								text "No."
 							end
-							th { text "Title" }
-							th { text "Released" }
-							th do
+							th onclick: "mixpanel.track('clicked_sort', {type: 'song', column: 'title'});" do
+								text "Title"
+							end
+							th onclick: "mixpanel.track('clicked_sort', {type: 'song', column: 'released'});" do
+								text "Released"
+							end
+							th onclick: "mixpanel.track('clicked_sort', {type: 'song', column: 'times_performed'});" do
 								text "Times performed" 
 							end
 						end
 						songhash.each do |title, info|
-							tr do
+							tr onclick: "mixpanel.track('clicked_row', {type: 'song', title: '#{title}'});" do
 								td { text "#{info[:id] + 1}".to_s.rjust(4, " ") }
 								td { sname is:"#{info[:title]}";a info[:title], href: "/#{slug}/songs/#{info[:id]}" }
 								td { text info[:released] }
@@ -243,14 +260,20 @@ Dir["data/perf/*"].each do |path|
 
 					table system: :foo_table, hover: true, max_items_per_page: 20 do
 						thead do
-							th { text "Date" }
-							th { text "Event Name" }
-							th { text "Venue" }
+							th onclick: "mixpanel.track('clicked_sort', {type: 'event', column: 'date'});" do
+								text "Date"
+							end
+							th onclick: "mixpanel.track('clicked_sort', {type: 'event', column: 'event_name'});" do
+								text "Event Name"
+							end
+							th onclick: "mixpanel.track('clicked_sort', {type: 'event', column: 'venue'});" do
+								text "Venue"
+							end
 						end
 						titlehash.each do |title, info|
 
 							info.map do |dateinfo|
-								tr do
+								tr onclick: "mixpanel.track('clicked_row', {type: 'event', title: '#{title}'});" do
 									td { a "#{dateinfo[:date]}", href: "/#{slug}/events/#{dateinfo[:id]}" }
 									td { sname is:"#{title}";a title, href: "/#{slug}/events/#{dateinfo[:id]}" }
 									td { sname is:"#{dateinfo[:xtitle]}";a dateinfo[:xtitle], href: "/#{slug}/events/#{dateinfo[:id]}" }

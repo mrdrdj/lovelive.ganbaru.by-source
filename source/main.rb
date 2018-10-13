@@ -71,6 +71,10 @@ def standard_page(name:, path:, &block)
 		instance_eval(&block)
 
 		request_css "css/fonts.css"
+
+		on_page_load <<-SCRIPT
+			mixpanel.track("load_page", {name:"#{name}", path:"#{path}"});
+		SCRIPT
 	end
 
 end
